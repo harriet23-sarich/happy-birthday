@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Birthday Gift</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:pink;
+    overflow:hidden;
+    font-family:Arial;
+}
+
+.container{
+    text-align:center;
+    z-index:2;
+}
+
+h1{
+    font-size:60px;
+    color:#8b004f;
+    animation: glow 2s infinite;
+}
+
+p{
+    font-size:20px;
+    color:#5c0033;
+    margin-bottom:30px;
+}
+
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:#ff4d88;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+    animation:pulse 1.5s infinite;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+@keyframes glow{
+    0%{transform:scale(1);}
+    50%{
+        transform:scale(1.05);
+        text-shadow:0 0 20px white;
+    }
+    100%{transform:scale(1);}
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.1);}
+    100%{transform:scale(1);}
+}
+
+/* Floating Hearts */
+
+.heart{
+    position:absolute;
+    color:red;
+    font-size:25px;
+    animation: float 6s linear infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(100vh);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Happy Birthday Kimsishy❤️</h1>
+
+    <p>
+        Today is all about celebrating you and the joy you bring 💕
+    </p>
+
+    <button onclick="alert('Happy Birthday ❤️🎉')">
+        Start the Celebration ✨
+    </button>
+</div>
+
+<!-- Hearts -->
+<div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+<div class="heart" style="left:20%; animation-delay:2s;">💕</div>
+<div class="heart" style="left:35%; animation-delay:4s;">💖</div>
+<div class="heart" style="left:50%; animation-delay:1s;">❤️</div>
+<div class="heart" style="left:70%; animation-delay:3s;">💘</div>
+<div class="heart" style="left:85%; animation-delay:5s;">💕</div>
+
+</body>
+</html>
